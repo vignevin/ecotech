@@ -1,0 +1,59 @@
+---
+title: "BiosprayTech 2023"
+author: "Xavier Delpuech, IFV, UMT EcoTech 2023"
+date: "2023-09-05"
+format: html
+---
+
+This map @fig-map_design is interactive, you can choose the visibility of each layer (click on the left).
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-cap: "Map of BiosprayTech experimenal field"
+#| label: fig-map_design
+#| column: page
+
+# libraries ---------------------------------------------------------------
+library(sf) # (Spatial Feature) est dédié à la manipulation, la transformation et l’analyse de données spatiales. A la manière du Tidyverse, il combine les fonctionnalités de {sp}, {rgeos} et {rgdal} dans un package.
+library(tidyverse) # manipulation des données
+library(tmap) #(thematic map) est quant à lui dédié à la visualisation des données spatiales. Cette fois-ci, à la manière du package {ggplot2}.
+
+# load data ---------------------------------------------------------------
+# shapefile with xpdesign (each segment as a trt)
+file_path <- "C:\\Users\\xdelpuech\\OneDrive - vignevin.com\\AE3\\ProjetsEnCours\\BIOSPRAYTECH\\04_TRAVAIL_EN_COURS\\2023\\RScript\\generate_modulation_map\\maps\\xpdesign2023-05-11.shp"
+segment <- sf::read_sf(file_path)
+
+unit_xp <- segment %>%
+  filter(expe==1)
+
+block <- segment %>%
+  filter(!is.na(bloc)) %>%
+  mutate(block = paste("block",bloc)) %>%
+  group_by(block) %>%
+  summarize(block=unique(block)) %>%
+  sf::st_convex_hull()
+
+rangs <- segment %>%
+  mutate(row = Num_rang) %>%
+  group_by(row) %>%
+  summarize(row=unique(row))
+
+### modulation map
+## modulation map
+modu_map_path <- "C:\\Users\\xdelpuech\\OneDrive - vignevin.com\\AE3\\ProjetsEnCours\\BIOSPRAYTECH\\04_TRAVAIL_EN_COURS\\2023\\RScript\\generate_modulation_map\\maps\\modulation_map_DV76_2023-04-14.shp"
+modu_map <- sf::read_sf(modu_map_path)
+
+# affichage ----------
+tmap_mode("plot")
+mymap <- #tm_tiles() leaflet::providers$OpenStreetMap,group="OpenStreetMap") + 
+  tm_shape(rangs) + tm_lines(col="green3",lwd=2)  + 
+  tm_shape(block) + tm_polygons(alpha=0,lwd=1) + tm_text("block") +
+  tm_shape(unit_xp) + tm_lines(col="trt",lwd=4)  +
+  tm_shape(modu_map) + tm_polygons(alpha=0.5) + tm_legend(title="Experimental design map") +  
+  tm_basemap("OpenStreetMap.France",alpha=0.5) +
+  tm_view(set.zoom.limits = c(18,22))
+ 
+mymap <- tmap::tmap_leaflet(mymap) 
+widgetframe::frameWidget(mymap,width="100%")
+```
