@@ -34,7 +34,7 @@ block <- segment %>%
   summarize(block=unique(block)) %>%
   sf::st_convex_hull()
 
-rangs <- segment %>%
+rows <- segment %>%
   mutate(row = Num_rang) %>%
   group_by(row) %>%
   summarize(row=unique(row))
@@ -47,7 +47,7 @@ modu_map <- sf::read_sf(modu_map_path)
 # affichage ----------
 tmap_mode("plot")
 mymap <- #tm_tiles() leaflet::providers$OpenStreetMap,group="OpenStreetMap") + 
-  tm_shape(rangs) + tm_lines(col="green3",lwd=2)  + 
+  tm_shape(rows) + tm_lines(col="green3",lwd=2)  + 
   tm_shape(block) + tm_polygons(alpha=0,lwd=1) + tm_text("block") +
   tm_shape(unit_xp) + tm_lines(col="trt",lwd=4)  +
   tm_shape(modu_map) + tm_polygons(alpha=0.5) + tm_legend(title="Experimental design map") +  
@@ -56,4 +56,41 @@ mymap <- #tm_tiles() leaflet::providers$OpenStreetMap,group="OpenStreetMap") +
  
 mymap <- tmap::tmap_leaflet(mymap) 
 widgetframe::frameWidget(mymap,width="100%")
+```
+
+In this experiment, 2 factors were tested @tbl-treatments :
+
+-   the dose of phytosanitary products : from 0.7 to 2x the reference dose (1N)
+
+-   the spray pattern :
+
+    -   FpF : face per face, both sides of the grapevine row received spray directly
+
+    -   Uf : only one side of the row received spray directly
+
+    -   BH : both sides of the row received spray directly, and the spray is oriented from bottom to top with higher dosage in the bunches area
+
+```{r}
+#| echo: false
+#| warning: false
+#| tbl-cap: Number of replicates per experimental treatment
+#| label: tbl-treatments
+
+# table
+segment$sprayPattern <- gsub("_.*$","",segment$trt)  
+segment$dose <- paste(gsub(".*_","",segment$trt),"N",sep="")
+
+tbl_trt <- segment %>%
+  filter(expe == 1) %>%
+  sf::st_drop_geometry() %>%
+  group_by(sprayPattern,dose) %>%
+  summarize(rep=n()/4) %>%
+  # Change the orientation of the table so that dose become the variable headings
+  pivot_wider(names_from = dose, values_from = rep)
+ 
+# Create table to present the data]
+tbl_trt %>%
+  knitr::kable(format="html",escape="F",caption="Number of replicates per experimental treatment")
+
+
 ```
