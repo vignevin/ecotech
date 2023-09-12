@@ -5,7 +5,7 @@ date: "2023-09-05"
 format: html
 ---
 
-This map @fig-map_design is interactive, you can choose the visibility of each layer (click on the left).
+This map @fig-map_design is interactive, you can choose the visibility of each layer (click on the left). See below for explanations of experimental treatments.
 
 ```{r}
 #| echo: false
