@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SuproFuit 2023 - demo Biospraytech - Experimental design</title>
+<title>SuproFuit 2023 - demo Biospraytech - Modulation map creation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./xpDesign.html">BiosprayTech</a></li><li class="breadcrumb-item"><a href="./xpDesign.html">Experimental design</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./xpDesign.html">BiosprayTech</a></li><li class="breadcrumb-item"><a href="./mapCreation.html">Modulation map creation</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -115,13 +115,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./xpDesign.html" class="sidebar-item-text sidebar-link active">
+  <a href="./xpDesign.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Experimental design</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mapCreation.html" class="sidebar-item-text sidebar-link">
+  <a href="./mapCreation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Modulation map creation</span></a>
   </div>
 </li>
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Experimental design</h1>
+<h1 class="title">Modulation map creation</h1>
 </div>
 
 
@@ -167,60 +167,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>In this experiment, 2 factors were tested :</p>
-<ul>
-<li><p>the dose of phytosanitary products : from 0.7 to 2x the reference dose (1N)</p></li>
-<li><p>the spray pattern :</p></li>
-</ul>
+<p>The modulation map is created from the experimental design map, where each experimental unit is a section of a grapevine row with a specific spray pattern and a specific PPP dose. The modulation map defines geographic polygons with volume rate instruction for each nozzle of the sprayer.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="modaPulve.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Spray pattern modalities</figcaption>
+<p><img src="SprayerNozzle.png" class="img-fluid figure-img" width="634"></p>
+<figcaption class="figure-caption">Nozzle numbers</figcaption>
 </figure>
 </div>
-<p>10 experimental treatments, with around 20 replicates each : <strong>207 experimental units</strong> ! <a href="#tbl-treatments">Table&nbsp;1</a></p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-treatments" class="anchored">
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
-<caption>Table&nbsp;1: Number of replicates per experimental treatment</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">sprayPattern</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">0.7N</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">1.4N</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">1N</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">2N</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">BH</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FpF</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">21</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Uf</td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">NA</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-
-</div>
+<p>The nozzle volume rate instructions in each polygon depend on the sprayer direction.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="modulationMapCreation.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Modulation map creation</figcaption>
+</figure>
 </div>
 
 

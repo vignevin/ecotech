@@ -7,18 +7,18 @@
     "text": "This map Figure 1 is interactive, you can choose the visibility of each layer (click on the left). See below for explanations of experimental treatments.\n\n\n\n\n\nFigure 1: Map of BiosprayTech experimenal field"
   },
   {
+    "objectID": "disease.html",
+    "href": "disease.html",
+    "title": "Disease assessment",
+    "section": "",
+    "text": "207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?\n\n\n\n\n\n\n\nEPPO Standard\nFAST assessment\n\n\n\n\n% of bunch with powdery mildew\nClass [0-5] of powdery mildew on bunches\n\n\n\n\n\n\n\n81 observed units (40%)\n50 bunches/unit : 4050 obs\n9 persons\n27 working hours\n20 min/unit\n\n\n207 observed units (on both sides)\n10 vinestocks/unit : 4140 observation\n6 persons\n18 working hours\n5.2 min/unit (4 times faster)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Introduction",
     "section": "",
     "text": "Welcome in this Precision spraying and Biospraytech demo !\nUMT ECOTECH aims at developping precision spraying for optimising application of products : quantity, way to target the crop, coverage and water volumes. Biospraytech is our program to use precision spraying for assessing the most appropriate methods and sprayers settings to spray biocontrol and obtain protection programs that meet the Green Deal objectives. This is On Farm Precision Experiment.\nVegetation maps such as made from mobile 2D Lidar measurements can be used in the process. The prototype prepared by Berthoud and Optima to support this program can control each individual nozzle with a centrimetric precision on the vertical boom according to requirements provided in a map.\nDemo : A map will be uploaded in the sprayer and the participants will see change of flow rate at nozzles when the sprayer moves from one place to another."
-  },
-  {
-    "objectID": "xpDesign.html",
-    "href": "xpDesign.html",
-    "title": "Experimental design",
-    "section": "",
-    "text": "In this experiment, 2 factors were tested :\n\nthe dose of phytosanitary products : from 0.7 to 2x the reference dose (1N)\nthe spray pattern :\n\n\n\n\nSpray pattern modalities\n\n\n10 experimental treatments, with around 20 replicates each : 207 experimental units ! Table 1\n\n\n\n\nTable 1: Number of replicates per experimental treatment\n\n\nsprayPattern\n0.7N\n1.4N\n1N\n2N\n\n\n\n\nBH\n12\n12\n12\nNA\n\n\nFpF\n24\n24\n21\n21\n\n\nUf\n27\n27\n27\nNA"
   },
   {
     "objectID": "mapCreation.html",
@@ -28,10 +28,10 @@
     "text": "The modulation map is created from the experimental design map, where each experimental unit is a section of a grapevine row with a specific spray pattern and a specific PPP dose. The modulation map defines geographic polygons with volume rate instruction for each nozzle of the sprayer.\n\n\n\nNozzle numbers\n\n\nThe nozzle volume rate instructions in each polygon depend on the sprayer direction.\n\n\n\nModulation map creation"
   },
   {
-    "objectID": "disease.html",
-    "href": "disease.html",
-    "title": "Disease assessment",
+    "objectID": "xpDesign.html",
+    "href": "xpDesign.html",
+    "title": "Experimental design",
     "section": "",
-    "text": "207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?\n\n\n\n\n\n\n\nEPPO Standard\nFAST assessment\n\n\n\n\n% of bunch with powdery mildew\nClass [0-5] of powdery mildew on bunches\n\n\n\n\n\n\n\n81 observed units (40%)\n50 bunches/unit : 4050 obs\n9 persons\n27 working hours\n20 min/unit\n\n\n207 observed units (on both sides)\n10 vinestocks/unit : 4140 observation\n6 persons\n18 working hours\n5.2 min/unit (4 times faster)"
+    "text": "In this experiment, 2 factors were tested :\n\nthe dose of phytosanitary products : from 0.7 to 2x the reference dose (1N)\nthe spray pattern :\n\n\n\n\nSpray pattern modalities\n\n\n10 experimental treatments, with around 20 replicates each : 207 experimental units ! Table 1\n\n\n\n\nTable 1: Number of replicates per experimental treatment\n\n\nsprayPattern\n0.7N\n1.4N\n1N\n2N\n\n\n\n\nBH\n12\n12\n12\nNA\n\n\nFpF\n24\n24\n21\n21\n\n\nUf\n27\n27\n27\nNA"
   }
 ]
