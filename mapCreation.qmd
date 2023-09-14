@@ -1,0 +1,12 @@
+---
+title: "Modulation map creation"
+format: html
+---
+
+The modulation map is created from the experimental design map, where each experimental unit is a section of a grapevine row with a specific spray pattern and a specific PPP dose. The modulation map defines geographic polygons with volume rate instruction for each nozzle of the sprayer.
+
+![Nozzle numbers](SprayerNozzle.png){fig-align="center" width="634"}
+
+The nozzle volume rate instructions in each polygon depend on the sprayer direction.
+
+![Modulation map creation](modulationMapCreation.png)

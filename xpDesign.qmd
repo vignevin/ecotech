@@ -1,0 +1,45 @@
+---
+title: "Experimental design"
+format: html
+---
+
+In this experiment, 2 factors were tested :
+
+-   the dose of phytosanitary products : from 0.7 to 2x the reference dose (1N)
+
+-   the spray pattern :
+
+![Spray pattern modalities](modaPulve.png)
+
+10 experimental treatments, with around 20 replicates each : **207 experimental units** ! @tbl-treatments
+
+```{r}
+#| echo: false
+#| warning: false
+#| tbl-cap: Number of replicates per experimental treatment
+#| label: tbl-treatments
+
+library(sf) 
+library(dplyr)
+
+
+file_path <- "C:\\Users\\xdelpuech\\OneDrive - vignevin.com\\AE3\\ProjetsEnCours\\BIOSPRAYTECH\\04_TRAVAIL_EN_COURS\\2023\\RScript\\generate_modulation_map\\maps\\xpdesign2023-05-11.shp"
+segment <- sf::read_sf(file_path)
+# table
+segment$sprayPattern <- gsub("_.*$","",segment$trt)  
+segment$dose <- paste(gsub(".*_","",segment$trt),"N",sep="")
+
+tbl_trt <- segment %>%
+  filter(expe == 1) %>%
+  sf::st_drop_geometry() %>%
+  group_by(sprayPattern,dose) %>%
+  summarize(rep=n()/4) %>%
+  # Change the orientation of the table so that dose become the variable headings
+  tidyr::pivot_wider(names_from = dose, values_from = rep)
+ 
+# Create table to present the data]
+tbl_trt %>%
+  knitr::kable(format="html",escape="F",caption="Number of replicates per experimental treatment")
+
+
+```

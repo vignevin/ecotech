@@ -1,7 +1,24 @@
 project:
-  title: "CartoBiospraytech2023"
+  title: "SuproFuit 2023 - demo Biospraytech"
   type: website
   output-dir: docs
 
 editor: visual
 
+website:
+  title: "SuproFuit 2023 - demo Biospraytech"
+  sidebar:
+    contents:
+      - index.qmd
+      - section: "BiosprayTech"
+        contents:
+          - xpDesign.qmd
+          - mapCreation.qmd
+          - CartoBiospraytech2023.qmd
+          - disease.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
