@@ -1,0 +1,9 @@
+---
+title: "Flowrate variation range"
+---
+
+Flowrates vary by a factor from 1 to 4 depending on the DutyCycle selected.
+
+![Flowrate versus duty cycle](DCflowrate.png)
+
+![](logoProto.png)

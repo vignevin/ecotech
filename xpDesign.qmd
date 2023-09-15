@@ -3,15 +3,17 @@ title: "Experimental design"
 format: html
 ---
 
+In 2023, we made a field trial on a 2h commercial vineyard to explore how the spray pattern and the dosage of PPP affects the control of Powdery Mildew.
+
 In this experiment, 2 factors were tested :
 
--   the dose of phytosanitary products : from 0.7 to 2x the reference dose (1N)
+-   the **dose of phytosanitary products** : from 0.7 to 2x the reference dose (1N)
 
--   the spray pattern :
+-   the **spray pattern** :
 
 ![Spray pattern modalities](modaPulve.png)
 
-10 experimental treatments, with around 20 replicates each : **207 experimental units** ! @tbl-treatments
+10 experimental treatments with around 20 replicates each @tbl-treatments : **207 experimental units** were implemented on the field thanks to the **prototype PWM sprayer**.
 
 ```{r}
 #| echo: false

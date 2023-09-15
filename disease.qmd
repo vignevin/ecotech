@@ -10,7 +10,7 @@ format: html
 +=================================+============================================+
 | \% of bunch with powdery mildew | Class \[0-5\] of powdery mildew on bunches |
 +---------------------------------+--------------------------------------------+
-| ![](EPPO.png){width="470"}      | ![](FAST.png){width="470"}                 |
+| ![](EPPO.png){width="470"}      | ![](FAST.png){width="404"}                 |
 +---------------------------------+--------------------------------------------+
 | -   81 observed units (40%)     | -   207 observed units (on both sides)     |
 | -   50 bunches/unit : 4050 obs  | -   10 vinestocks/unit : 4140 observation  |

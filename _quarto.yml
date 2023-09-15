@@ -8,12 +8,17 @@ editor: visual
 website:
   title: "SuproFuit 2023 - demo Biospraytech"
   sidebar:
+    logo: logoEcotech.jpg
     contents:
       - index.qmd
-      - section: "BiosprayTech"
+      - section: "The Sprayer"
+        contents:
+          - controlNozzle.qmd
+          - flowrate.qmd
+          - log.qmd
+      - section: "The BiosprayTech experiment"
         contents:
           - xpDesign.qmd
-          - mapCreation.qmd
           - CartoBiospraytech2023.qmd
           - disease.qmd
 

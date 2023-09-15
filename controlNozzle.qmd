@@ -1,0 +1,9 @@
+---
+title: "Control of each nozzle"
+---
+
+Each nozzle can be assigned a different setpoint.
+
+![Examples of volume rates assigned to each nozzle](ControlNozzle.png)
+
+![](logoProto.png)

@@ -3,12 +3,14 @@ title: "Introduction"
 format: html
 ---
 
-Welcome in this Precision spraying and Biospraytech demo !
+Welcome to the Precision spraying and Biospraytech demo !
 
-UMT ECOTECH aims at developping precision spraying for optimising application of products : quantity, way to target the crop, coverage and water volumes. Biospraytech is our program to use precision spraying for assessing the most appropriate methods and sprayers settings to spray biocontrol and obtain protection programs that meet the Green Deal objectives. This is On Farm Precision Experiment.
+UMT ECOTECH aims at developping precision spraying for optimising application of products : quantity, way to target the crop, coverage and water volumes. Biospraytech is our program to use **precision spraying** for assessing the most appropriate methods and sprayers settings to spray **biocontrol** and obtain protection programs that meet the **Green Deal** objectives.
 
-Vegetation maps such as made from mobile 2D Lidar measurements can be used in the process. The prototype prepared by Berthoud and Optima to support this program can control each individual nozzle with a centrimetric precision on the vertical boom according to requirements provided in a map.
+The prototype prepared by Berthoud and Optima to support this program can control each individual nozzle with a centrimetric precision on the vertical boom according to requirements provided in a map.
 
-Demo : A map will be uploaded in the sprayer and the participants will see change of flow rate at nozzles when the sprayer moves from one place to another.
+Vegetation maps such as made from mobile 2D Lidar measurements can also be used in the process.
 
 ------------------------------------------------------------------------
+
+![](protoVineyard.jpg)

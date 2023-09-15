@@ -1,5 +1,5 @@
 ---
-title: "Biospraytech map"
+title: "Modulation map"
 format: html
 ---
 
@@ -10,7 +10,6 @@ This map @fig-map_design is interactive, you can choose the visibility of each l
 #| warning: false
 #| fig-cap: "Map of BiosprayTech experimenal field"
 #| label: fig-map_design
-#| column: page
 
 # libraries ---------------------------------------------------------------
 library(sf) # (Spatial Feature) est dédié à la manipulation, la transformation et l’analyse de données spatiales. A la manière du Tidyverse, il combine les fonctionnalités de {sp}, {rgeos} et {rgdal} dans un package.
@@ -55,4 +54,3 @@ mymap <- #tm_tiles() leaflet::providers$OpenStreetMap,group="OpenStreetMap") +
 mymap <- tmap::tmap_leaflet(mymap) 
 widgetframe::frameWidget(mymap,width="100%")
 ```
-

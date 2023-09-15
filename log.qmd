@@ -1,0 +1,65 @@
+---
+title: "Monitoring of spraying parameters"
+---
+
+Monitoring of spraying parameters and GPS accuracy (RTK correction).
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-cap: Phytosanitary treatment of an experimental plot (T7 - PV) – June 8th 2023 
+#| label: fig-log
+
+library(ggplot2)
+library(plotly)
+
+dataLog <- read.csv2("dataLog.csv",dec=".")
+dataLog$time<-strptime(dataLog$timeStamp,format="%H:%M:%OS")
+dataLog$time<-as.POSIXct(dataLog$time)
+
+## passage en format long avec ajout d'un champ "descente"
+library(dplyr)
+dataLog_wide_ref <- dataLog %>% 
+  tidyr::pivot_longer(
+    cols=paste0("ref_d",1:4),
+    names_to = "descente",
+    names_prefix = "ref_",
+    values_to = "volrate") %>%
+  select(Longitude,Latitude,time,descente,volrate) %>%
+  mutate(type="ref")
+
+dataLog_wide_volrate <- dataLog %>% # idem pour les debits
+  tidyr::pivot_longer(
+    cols=paste0("volrate_d",1:4),
+    names_to = "descente",
+    names_prefix = "volrate_",
+    values_to = "volrate") %>%
+  select(Longitude,Latitude,time,descente,volrate) %>%
+  mutate(type="volrate")
+
+dataLog_wide <- rbind(dataLog_wide_ref,dataLog_wide_volrate) #merge des 2 fichiers
+dataLog_wide$volrate <- round(dataLog_wide$volrate,digits=1)
+
+range_y <- quantile(dataLog_wide$volrate,probs=c(0.05,0.95))
+range_y = c(0,180)
+colnames(dataLog_wide)[colnames(dataLog_wide)=="descente"] <- "boom"
+dataLog_wide$type[dataLog_wide$type=="ref"]<-"volrate_ref"
+
+p <- ggplot(data=dataLog_wide,aes(time,volrate,col=boom,lty=type)) +
+  geom_line() + 
+  #facet_grid(rows=vars(boom)) + 
+  theme_bw() + 
+  ylab("Volume rate L/ha") +
+  ylim(range_y)
+  
+
+# convert the ggplot2 object to a plotly object and add a range slider filter
+p <- ggplotly(p) %>%
+  layout(
+    xaxis = list(title = "", rangeslider = list()),
+    yaxis = list(title = "")
+   )
+p
+```
+
+![](logoProto.png)
