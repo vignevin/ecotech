@@ -21,6 +21,27 @@
     "text": "207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?\n\n\n\n\n\n\n\nEPPO Standard\nFAST assessment\n\n\n\n\n% of bunch with powdery mildew\nClass [0-5] of powdery mildew on bunches\n\n\n\n\n\n\n\n81 observed units (40%)\n50 bunches/unit : 4050 obs\n9 persons\n27 working hours\n20 min/unit\n\n\n207 observed units (on both sides)\n10 vinestocks/unit : 4140 observation\n6 persons\n18 working hours\n5.2 min/unit (4 times faster)"
   },
   {
+    "objectID": "disease.html#manual-scouting",
+    "href": "disease.html#manual-scouting",
+    "title": "Disease assessment",
+    "section": "",
+    "text": "207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?\n\n\n\n\n\n\n\nEPPO Standard\nFAST assessment\n\n\n\n\n% of bunch with powdery mildew\nClass [0-5] of powdery mildew on bunches\n\n\n\n\n\n\n\n81 observed units (40%)\n50 bunches/unit : 4050 obs\n9 persons\n27 working hours\n20 min/unit\n\n\n207 observed units (on both sides)\n10 vinestocks/unit : 4140 observation\n6 persons\n18 working hours\n5.2 min/unit (4 times faster)"
+  },
+  {
+    "objectID": "disease.html#ai-assessment",
+    "href": "disease.html#ai-assessment",
+    "title": "Disease assessment",
+    "section": "AI assessment",
+    "text": "AI assessment\nWe also tested the recognition by artificial intelligence of downy mildew symptoms on images taken by drone in partnership with the company Chouette.\n\n\n\nDowny mildiew assessment using AI"
+  },
+  {
+    "objectID": "diseaseMap.html",
+    "href": "diseaseMap.html",
+    "title": "Disease map",
+    "section": "",
+    "text": "Powdery mildew was monitored on the field Figure 1 :\n\nflag shoots at BBCH53\nsymptoms on bunches at BBCH77 with EPPO protocl and a FAST protol\n\nDowny mildew was assessed by symptoms recognitionby artificial intelligence from drone images (Chouette)\n\n\n\n\n\nFigure 1: Map of disease assessment 2023"
+  },
+  {
     "objectID": "flowrate.html",
     "href": "flowrate.html",
     "title": "Flowrate variation range",

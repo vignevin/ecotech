@@ -1,14 +1,15 @@
 project:
-  title: "SuproFuit 2023 - demo Biospraytech"
+  title: "SuproFuit 2023 - demo day"
   type: website
   output-dir: docs
 
 editor: visual
 
 website:
-  title: "SuproFuit 2023 - demo Biospraytech"
+  title: "SuproFuit 2023 - demo day"
   sidebar:
-    logo: logoEcotech.jpg
+    background: "#dae0dd"
+    logo: logoSuproFruit.png
     contents:
       - index.qmd
       - section: "The Sprayer"
@@ -21,9 +22,15 @@ website:
           - xpDesign.qmd
           - CartoBiospraytech2023.qmd
           - disease.qmd
+          - diseaseMap.qmd
+  page-footer:
+    right: "The 16th SUPROFRUIT Workshop - Demo - September 20, 2023"
+    left: "&copy; CC BY-NC-ND"
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+
+lang: en

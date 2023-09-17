@@ -54,3 +54,5 @@ mymap <- #tm_tiles() leaflet::providers$OpenStreetMap,group="OpenStreetMap") +
 mymap <- tmap::tmap_leaflet(mymap) 
 widgetframe::frameWidget(mymap,width="100%")
 ```
+
+![](logoUMT.png)
