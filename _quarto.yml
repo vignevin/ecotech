@@ -20,9 +20,7 @@ website:
       - section: "The BiosprayTech experiment"
         contents:
           - xpDesign.qmd
-          - CartoBiospraytech2023.qmd
           - disease.qmd
-          - diseaseMap.qmd
   page-footer:
     right: "The 16th SUPROFRUIT Workshop - Demo - September 20, 2023"
     left: "&copy; CC BY-NC-ND"
