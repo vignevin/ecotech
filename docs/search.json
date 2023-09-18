@@ -39,14 +39,14 @@
     "href": "index.html",
     "title": "Introduction",
     "section": "",
-    "text": "Welcome to the Precision spraying and Biospraytech demo !\nUMT ECOTECH aims at developping precision spraying for optimising application of products : quantity, way to target the crop, coverage and water volumes. Biospraytech is our program to use precision spraying for assessing the most appropriate methods and sprayers settings to spray biocontrol and obtain protection programs that meet the Green Deal objectives.\nThe prototype prepared by Berthoud and Optima to support this program can control each individual nozzle with a centrimetric precision on the vertical boom according to requirements provided in a map.\nVegetation maps such as made from mobile 2D Lidar measurements can also be used in the process."
+    "text": "Welcome to the Precision spraying and Biospraytech demo !\nUMT ECOTECH aims at developping precision spraying for optimising application of products : quantity, way to target the crop, coverage and water volumes. Biospraytech is our program to use precision spraying for assessing the most appropriate methods and sprayers settings to spray biocontrol and obtain protection programs that meet the Green Deal objectives.\nThe PWM prototype sprayer (Berthoud Win-Air fitted with Optima Concept® PWM nozzle control) to support this program can control each individual nozzle with a centrimetric precision on the vertical boom according to requirements provided in a map.\nVegetation maps such as made from mobile 2D Lidar measurements can also be used in the process.\n\n\n\n\nBerthoud Win-Air fitted with Optima Concept® PWM nozzle control"
   },
   {
     "objectID": "lidar.html",
     "href": "lidar.html",
     "title": "Vegetation characterization",
     "section": "",
-    "text": "To understand the effectiveness of phytosanitary protection, it is also necessary to characterize the vegetation. The structure of the vegetation was measured using a Lidar.\n\n\n\nLidar acquisition on grapevine\n\n\nFrom the data we can calculate the vegetation height and width and calculate the Tree Row Volume Figure 1.\n\n\n\n\n\nFigure 1: Map of TRV from LiDAR, 24 may 2023"
+    "text": "To understand the effectiveness of phytosanitary protection, it is also necessary to characterize the vegetation. The structure of the vegetation was measured using a Lidar.\n\n\n\nLidar acquisition on grapevine\n\n\nFrom the data we can calculate the vegetation height and width and calculate the Tree Row Volume Figure 1.\n\n\n\n\n\nFigure 1: Map of TRV from LiDAR, 24 may 2023\n\n\n\nBesides serving as interpretation tool with geometric characterization of vigour such as Tree Row Volume (TRV) and Leaf Wall Area (LWA), LiDAR information can be used to predict expected statistical and physical distribution of deposits on the vegetation by a known sprayer. This is documented in the following references :\n\nCheraiet et al. (2022)\nCheraiet et al. (2021)\nCheraïet et al. (2020)\n\n\n\n\n\n\nReferences\n\nCheraiet, Anice, Olivier Naud, Mathilde Carra, Sébastien Codis, Frédéric Lebeau, and James Taylor. 2021. “Predicting the Site-Specific Distribution of Agrochemical Spray Deposition in Vineyards at Multiple Phenological Stages Using 2D LiDAR-Based Primary Canopy Attributes.” Computers and Electronics in Agriculture 189: 106402. https://doi.org/https://doi.org/10.1016/j.compag.2021.106402.\n\n\nCheraiet, Anice, James Taylor, Sébastien Codis, Pierre Petitot, Florent Bidaut, Matthieu Liebart, and Olivier Naud. 2022. “Testing the Suitability of a Terrestrial 2D LiDAR Scanner for 3D Canopy Characterisation of Narrow Vineyards to Optimise the Spraying Process.” In XXXI International Horticultural Congress (IHC2022): III International Symposium on Mechanization, Precision Horticulture, and 1360, 29–36. https://doi.org/https://doi.org/10.17660/ActaHortic.2023.1360.4.\n\n\nCheraïet, Anice, Olivier Naud, Mathilde Carra, Sébastien Codis, Frédéric Lebeau, and James Taylor. 2020. “An Algorithm to Automate the Filtering and Classifying of 2D LiDAR Data for Site-Specific Estimations of Canopy Height and Width in Vineyards.” Biosystems Engineering 200: 450–65. https://doi.org/https://doi.org/10.1016/j.biosystemseng.2020.10.016."
   },
   {
     "objectID": "log.html",
@@ -54,27 +54,6 @@
     "title": "Monitoring of spraying parameters",
     "section": "",
     "text": "Monitoring of spraying parameters and GPS accuracy (RTK correction).\n\n\n\n\n\nFigure 1: Phytosanitary treatment of an experimental plot (T7 - PV) – June 8th 2023"
-  },
-  {
-    "objectID": "OLD/CartoBiospraytech2023.html",
-    "href": "OLD/CartoBiospraytech2023.html",
-    "title": "Modulation map",
-    "section": "",
-    "text": "This map Figure 1 is interactive, you can choose the visibility of each layer (click on the left). See below for explanations of experimental treatments.\n\n\n\n\n\nFigure 1: Map of BiosprayTech experimenal field"
-  },
-  {
-    "objectID": "OLD/diseaseMap.html",
-    "href": "OLD/diseaseMap.html",
-    "title": "Disease map",
-    "section": "",
-    "text": "Powdery mildew was monitored on the field Figure 1 :\n\nflag shoots at BBCH53\nsymptoms on bunches at BBCH77 with EPPO protocl and a FAST protol\n\nDowny mildew was assessed by symptoms recognitionby artificial intelligence from drone images (Chouette)\n\n\n\n\n\nFigure 1: Map of disease assessment 2023"
-  },
-  {
-    "objectID": "OLD/mapCreation.html",
-    "href": "OLD/mapCreation.html",
-    "title": "Modulation map creation",
-    "section": "",
-    "text": "The modulation map is created from the experimental design map, where each experimental unit is a section of a grapevine row with a specific spray pattern and a specific PPP dose. The modulation map defines geographic polygons with volume rate instruction for each nozzle of the sprayer.\n\n\n\nNozzle numbers\n\n\nThe nozzle volume rate instructions in each polygon depend on the sprayer direction.\n\n\n\nModulation map creation"
   },
   {
     "objectID": "xpDesign.html",

@@ -58,6 +58,13 @@ xpdesign_core <- xpdesign %>%
   filter(n_section > min(n_section), n_section < max(n_section)) %>%
   ungroup()
 
+block <- xpdesign %>%
+  filter(!is.na(bloc)) %>%
+  mutate(block = paste("block",bloc)) %>%
+  group_by(block) %>%
+  summarize(block=unique(block)) %>%
+  sf::st_convex_hull()
+
 ## drapeaux
 flagShoots <- sf::read_sf(paste0(data_repo_path,"/carto/drapeaux2023.shp"))
 
@@ -68,7 +75,7 @@ data_all <- merge(xpdesign_core,dataC2)
 # moyenne des 2 faces par PU 
 EPPO <- data_all %>%
   group_by(PU,trt,bloc)%>%
-  summarise(OidiumPercentage=mean(g_oidium,na.rm=T))
+  summarise(PM_Percentage=mean(g_oidium,na.rm=T))
 
 ### comptage Q1
 dataQ1 <- read.csv(paste0(data_repo_path,"/data_Q1.csv"))
@@ -77,17 +84,18 @@ data_all <- merge(xpdesign_core,dataQ1)
 # moyenne des 2 faces par PU 
 FAST <- data_all %>%
   group_by(PU,trt,bloc)%>%
-  summarise(OidiumClass=median(q_oidium,na.rm=T))
+  summarise(PM_Class=median(q_oidium,na.rm=T))
 
 ## mildiou drone
 downyMildew_AI <- sf::read_sf(paste0(data_repo_path,"/carto/Mildiou tâche d'huile_10-07-2023_10-13-35.shp"))
 
 library(tmap)
 tmap_mode("plot")
-mymap <- tm_shape(EPPO) + tm_lines(col = "OidiumPercentage",size=2) +
-  tm_shape(FAST) + tm_lines(col = "OidiumClass",size=2) +
-  tm_shape(flagShoots) + tm_dots(col = "red") +
-  tm_shape(downyMildew_AI) + tm_dots(col="orange") +
+mymap <- tm_shape(EPPO) + tm_lines(col = "PM_Percentage",size=2) +
+  tm_shape(block) + tm_polygons(alpha=0,lwd=1,col="grey") + tm_text("block") +
+  tm_shape(FAST) + tm_lines(col = "PM_Class",size=2) +
+  tm_shape(flagShoots) + tm_dots(col = "red",legend.show = TRUE) +
+  tm_shape(downyMildew_AI) + tm_dots(col="orange",legend.show = TRUE) +
   tm_basemap("OpenStreetMap.France",alpha=0.2) +
   tm_view(set.zoom.limits = c(18,22))
  

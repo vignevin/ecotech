@@ -1,5 +1,6 @@
 ---
 title: "Vegetation characterization"
+bibliography: ref_lidar.bib
 ---
 
 To understand the effectiveness of phytosanitary protection, it is also necessary to characterize the vegetation. The structure of the vegetation was measured using a Lidar.
@@ -14,12 +15,22 @@ From the data we can calculate the vegetation height and width and calculate the
 #| fig-cap: "Map of TRV from LiDAR, 24 may 2023"
 #| label: fig-map_lidar
 
+
+library(sf) # (Spatial Feature) est dédié à la manipulation, la transformation et l’analyse de données spatiales. A la manière du Tidyverse, il combine les fonctionnalités de {sp}, {rgeos} et {rgdal} dans un package.
+library(dplyr)
+
 ## data repo
 data_repo_path <- "C:\\Users\\xdelpuech\\OneDrive - vignevin.com\\AE3\\ProjetsEnCours\\BIOSPRAYTECH\\03_DATA\\biospraytech2023\\data"
 
-### load map data
-library(sf) # (Spatial Feature) est dédié à la manipulation, la transformation et l’analyse de données spatiales. A la manière du Tidyverse, il combine les fonctionnalités de {sp}, {rgeos} et {rgdal} dans un package.
+xpdesign <- sf::read_sf(paste0(data_repo_path,"/carto/xpdesign2023-05-11.shp"))
+block <- xpdesign %>%
+  filter(!is.na(bloc)) %>%
+  mutate(block = paste("block",bloc)) %>%
+  group_by(block) %>%
+  summarize(block=unique(block)) %>%
+  sf::st_convex_hull()
 
+### load map data
 lidar <- sf::read_sf(paste0(data_repo_path,"\\carto\\2023-05-24_LeMas_vegetatives.gpkg"))
 lidar$TRV <- lidar$height*lidar$thickness*10000/3
 
@@ -28,13 +39,20 @@ LWA <- lidar
 
 library(tmap)
 tmap_mode("plot")
-mymap <- tm_shape(TRV) + tm_dots(col = "TRV",palette="-viridis") + 
-  tm_shape(LWA) + tm_dots(col = "lwa",palette="-viridis") +
+mymap <- tm_shape(LWA) + tm_dots(col = "lwa",palette="-viridis") + 
+  tm_shape(block) + tm_polygons(alpha=0,lwd=1,col="grey") + tm_text("block") +
+  tm_shape(TRV) + tm_dots(col = "TRV",palette="-viridis") +
   tm_basemap("OpenStreetMap.France",alpha=0.2) +
   tm_view(set.zoom.limits = c(18,22))
  
 mymap <- tmap::tmap_leaflet(mymap) 
 widgetframe::frameWidget(mymap,width="100%")
 ```
+
+Besides serving as interpretation tool with geometric characterization of vigour such as Tree Row Volume (TRV) and Leaf Wall Area (LWA), LiDAR information can be used to predict expected statistical and physical distribution of deposits on the vegetation by a known sprayer. This is documented in the following references :
+
+-   @cheraiet2022testing
+-   @CHERAIET2021106402
+-   @CHERAIET2020450
 
 ![](logoUMT.png)

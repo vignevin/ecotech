@@ -8,6 +8,8 @@ editor: visual
 website:
   title: "SuproFuit 2023 - demo day"
   search: false
+  page-navigation: true
+  reader-mode: true
   sidebar:
     background: "#dae0dd"
     logo: logoSuproFruit.png

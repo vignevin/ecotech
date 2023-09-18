@@ -20,11 +20,31 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./disease.html" rel="prev">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -80,6 +100,13 @@ ul.task-list li input[type="checkbox"] {
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./logoSuproFruit.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
@@ -186,17 +213,34 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div id="fig-map_lidar" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<div id="htmlwidget-7bc007a8c459a122df32" style="width:100%;height:480px;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-7bc007a8c459a122df32">{"x":{"url":"lidar_files/figure-html//widgets/widget_fig-map_lidar.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-64fa48da91403c6bdbfd" style="width:100%;height:480px;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-64fa48da91403c6bdbfd">{"x":{"url":"lidar_files/figure-html//widgets/widget_fig-map_lidar.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 <figcaption class="figure-caption">Figure&nbsp;1: Map of TRV from LiDAR, 24 may 2023</figcaption>
 </figure>
 </div>
 </div>
+<p>Besides serving as interpretation tool with geometric characterization of vigour such as Tree Row Volume (TRV) and Leaf Wall Area (LWA), LiDAR information can be used to predict expected statistical and physical distribution of deposits on the vegetation by a known sprayer. This is documented in the following references :</p>
+<ul>
+<li><span class="citation" data-cites="cheraiet2022testing">Cheraiet et al. (<a href="#ref-cheraiet2022testing" role="doc-biblioref">2022</a>)</span></li>
+<li><span class="citation" data-cites="CHERAIET2021106402">Cheraiet et al. (<a href="#ref-CHERAIET2021106402" role="doc-biblioref">2021</a>)</span></li>
+<li><span class="citation" data-cites="CHERAIET2020450">Cheraïet et al. (<a href="#ref-CHERAIET2020450" role="doc-biblioref">2020</a>)</span></li>
+</ul>
 <p><img src="logoUMT.png" class="img-fluid"></p>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-CHERAIET2021106402" class="csl-entry" role="listitem">
+Cheraiet, Anice, Olivier Naud, Mathilde Carra, Sébastien Codis, Frédéric Lebeau, and James Taylor. 2021. <span>“Predicting the Site-Specific Distribution of Agrochemical Spray Deposition in Vineyards at Multiple Phenological Stages Using 2D LiDAR-Based Primary Canopy Attributes.”</span> <em>Computers and Electronics in Agriculture</em> 189: 106402. https://doi.org/<a href="https://doi.org/10.1016/j.compag.2021.106402">https://doi.org/10.1016/j.compag.2021.106402</a>.
+</div>
+<div id="ref-cheraiet2022testing" class="csl-entry" role="listitem">
+Cheraiet, Anice, James Taylor, Sébastien Codis, Pierre Petitot, Florent Bidaut, Matthieu Liebart, and Olivier Naud. 2022. <span>“Testing the Suitability of a Terrestrial 2D LiDAR Scanner for 3D Canopy Characterisation of Narrow Vineyards to Optimise the Spraying Process.”</span> In <em>XXXI International Horticultural Congress (IHC2022): III International Symposium on Mechanization, Precision Horticulture, and 1360</em>, 29–36. https://doi.org/<a href="https://doi.org/10.17660/ActaHortic.2023.1360.4">https://doi.org/10.17660/ActaHortic.2023.1360.4</a>.
+</div>
+<div id="ref-CHERAIET2020450" class="csl-entry" role="listitem">
+Cheraïet, Anice, Olivier Naud, Mathilde Carra, Sébastien Codis, Frédéric Lebeau, and James Taylor. 2020. <span>“An Algorithm to Automate the Filtering and Classifying of 2D LiDAR Data for Site-Specific Estimations of Canopy Height and Width in Vineyards.”</span> <em>Biosystems Engineering</em> 200: 450–65. https://doi.org/<a href="https://doi.org/10.1016/j.biosystemseng.2020.10.016">https://doi.org/10.1016/j.biosystemseng.2020.10.016</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -430,6 +474,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./disease.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Disease assessment</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
