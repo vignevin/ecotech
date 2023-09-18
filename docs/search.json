@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "CartoBiospraytech2023.html",
-    "href": "CartoBiospraytech2023.html",
-    "title": "Modulation map",
-    "section": "",
-    "text": "This map Figure 1 is interactive, you can choose the visibility of each layer (click on the left). See below for explanations of experimental treatments.\n\n\n\n\n\nFigure 1: Map of BiosprayTech experimenal field"
-  },
-  {
     "objectID": "controlNozzle.html",
     "href": "controlNozzle.html",
     "title": "Control of each nozzle",
@@ -18,28 +11,21 @@
     "href": "disease.html",
     "title": "Disease assessment",
     "section": "",
-    "text": "207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?\n\n\n\n\n\n\n\nEPPO Standard\nFAST assessment\n\n\n\n\n% of bunch with powdery mildew\nClass [0-5] of powdery mildew on bunches\n\n\n\n\n\n\n\n81 observed units (40%)\n50 bunches/unit : 4050 obs\n9 persons\n27 working hours\n20 min/unit\n\n\n207 observed units (on both sides)\n10 vinestocks/unit : 4140 observation\n6 persons\n18 working hours\n5.2 min/unit (4 times faster)"
+    "text": "207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?\n\n\nIn spring, at phenological stage BBCH 53, a mapping of “flag shoots” symptoms of powdery mildew was realized.\nAt BBCH 77, we did 2 manual assessement of powdery mildew , one following EPPO standard and the other one in a “FAST” mode:\n\n\n\n\n\n\n\nEPPO Standard\nFAST assessment\n\n\n\n\n% of bunch with powdery mildew\nClass [0-5] of powdery mildew on bunches\n\n\n\n\n\n\n\n81 observed units (40%)\n50 bunches/unit : 4050 obs\n9 persons\n27 working hours\n20 min/unit\n\n\n207 observed units (on both sides)\n10 vinestocks/unit : 4140 observation\n6 persons\n18 working hours\n5.2 min/unit (4 times faster)\n\n\n\n\n\n\n\nWe also tested the recognition by artificial intelligence of downy mildew symptoms on images taken mid-july by drone in partnership with the company Chouette.\n\n\n\nDowny mildiew assessment using AI"
   },
   {
-    "objectID": "disease.html#manual-scouting",
-    "href": "disease.html#manual-scouting",
+    "objectID": "disease.html#disease-assessment",
+    "href": "disease.html#disease-assessment",
     "title": "Disease assessment",
     "section": "",
-    "text": "207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?\n\n\n\n\n\n\n\nEPPO Standard\nFAST assessment\n\n\n\n\n% of bunch with powdery mildew\nClass [0-5] of powdery mildew on bunches\n\n\n\n\n\n\n\n81 observed units (40%)\n50 bunches/unit : 4050 obs\n9 persons\n27 working hours\n20 min/unit\n\n\n207 observed units (on both sides)\n10 vinestocks/unit : 4140 observation\n6 persons\n18 working hours\n5.2 min/unit (4 times faster)"
+    "text": "207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?\n\n\nIn spring, at phenological stage BBCH 53, a mapping of “flag shoots” symptoms of powdery mildew was realized.\nAt BBCH 77, we did 2 manual assessement of powdery mildew , one following EPPO standard and the other one in a “FAST” mode:\n\n\n\n\n\n\n\nEPPO Standard\nFAST assessment\n\n\n\n\n% of bunch with powdery mildew\nClass [0-5] of powdery mildew on bunches\n\n\n\n\n\n\n\n81 observed units (40%)\n50 bunches/unit : 4050 obs\n9 persons\n27 working hours\n20 min/unit\n\n\n207 observed units (on both sides)\n10 vinestocks/unit : 4140 observation\n6 persons\n18 working hours\n5.2 min/unit (4 times faster)\n\n\n\n\n\n\n\nWe also tested the recognition by artificial intelligence of downy mildew symptoms on images taken mid-july by drone in partnership with the company Chouette.\n\n\n\nDowny mildiew assessment using AI"
   },
   {
-    "objectID": "disease.html#ai-assessment",
-    "href": "disease.html#ai-assessment",
+    "objectID": "disease.html#disease-mapping",
+    "href": "disease.html#disease-mapping",
     "title": "Disease assessment",
-    "section": "AI assessment",
-    "text": "AI assessment\nWe also tested the recognition by artificial intelligence of downy mildew symptoms on images taken by drone in partnership with the company Chouette.\n\n\n\nDowny mildiew assessment using AI"
-  },
-  {
-    "objectID": "diseaseMap.html",
-    "href": "diseaseMap.html",
-    "title": "Disease map",
-    "section": "",
-    "text": "Powdery mildew was monitored on the field Figure 1 :\n\nflag shoots at BBCH53\nsymptoms on bunches at BBCH77 with EPPO protocl and a FAST protol\n\nDowny mildew was assessed by symptoms recognitionby artificial intelligence from drone images (Chouette)\n\n\n\n\n\nFigure 1: Map of disease assessment 2023"
+    "section": "Disease mapping",
+    "text": "Disease mapping\nDisease assessments can be viewed on the Figure 1 below.\n\n\n\n\n\nFigure 1: Map of disease assessment 2023"
   },
   {
     "objectID": "flowrate.html",
@@ -56,6 +42,13 @@
     "text": "Welcome to the Precision spraying and Biospraytech demo !\nUMT ECOTECH aims at developping precision spraying for optimising application of products : quantity, way to target the crop, coverage and water volumes. Biospraytech is our program to use precision spraying for assessing the most appropriate methods and sprayers settings to spray biocontrol and obtain protection programs that meet the Green Deal objectives.\nThe prototype prepared by Berthoud and Optima to support this program can control each individual nozzle with a centrimetric precision on the vertical boom according to requirements provided in a map.\nVegetation maps such as made from mobile 2D Lidar measurements can also be used in the process."
   },
   {
+    "objectID": "lidar.html",
+    "href": "lidar.html",
+    "title": "Vegetation characterization",
+    "section": "",
+    "text": "To understand the effectiveness of phytosanitary protection, it is also necessary to characterize the vegetation. The structure of the vegetation was measured using a Lidar.\n\n\n\nLidar acquisition on grapevine\n\n\nFrom the data we can calculate the vegetation height and width and calculate the Tree Row Volume Figure 1.\n\n\n\n\n\nFigure 1: Map of TRV from LiDAR, 24 may 2023"
+  },
+  {
     "objectID": "log.html",
     "href": "log.html",
     "title": "Monitoring of spraying parameters",
@@ -63,8 +56,22 @@
     "text": "Monitoring of spraying parameters and GPS accuracy (RTK correction).\n\n\n\n\n\nFigure 1: Phytosanitary treatment of an experimental plot (T7 - PV) – June 8th 2023"
   },
   {
-    "objectID": "mapCreation.html",
-    "href": "mapCreation.html",
+    "objectID": "OLD/CartoBiospraytech2023.html",
+    "href": "OLD/CartoBiospraytech2023.html",
+    "title": "Modulation map",
+    "section": "",
+    "text": "This map Figure 1 is interactive, you can choose the visibility of each layer (click on the left). See below for explanations of experimental treatments.\n\n\n\n\n\nFigure 1: Map of BiosprayTech experimenal field"
+  },
+  {
+    "objectID": "OLD/diseaseMap.html",
+    "href": "OLD/diseaseMap.html",
+    "title": "Disease map",
+    "section": "",
+    "text": "Powdery mildew was monitored on the field Figure 1 :\n\nflag shoots at BBCH53\nsymptoms on bunches at BBCH77 with EPPO protocl and a FAST protol\n\nDowny mildew was assessed by symptoms recognitionby artificial intelligence from drone images (Chouette)\n\n\n\n\n\nFigure 1: Map of disease assessment 2023"
+  },
+  {
+    "objectID": "OLD/mapCreation.html",
+    "href": "OLD/mapCreation.html",
     "title": "Modulation map creation",
     "section": "",
     "text": "The modulation map is created from the experimental design map, where each experimental unit is a section of a grapevine row with a specific spray pattern and a specific PPP dose. The modulation map defines geographic polygons with volume rate instruction for each nozzle of the sprayer.\n\n\n\nNozzle numbers\n\n\nThe nozzle volume rate instructions in each polygon depend on the sprayer direction.\n\n\n\nModulation map creation"
@@ -74,6 +81,20 @@
     "href": "xpDesign.html",
     "title": "Experimental design",
     "section": "",
-    "text": "In 2023, we made a field trial on a 2h commercial vineyard to explore how the spray pattern and the dosage of PPP affects the control of Powdery Mildew.\nIn this experiment, 2 factors were tested :\n\nthe dose of phytosanitary products : from 0.7 to 2x the reference dose (1N)\nthe spray pattern :\n\n\n\n\nSpray pattern modalities\n\n\n10 experimental treatments with around 20 replicates each Table 1 : 207 experimental units were implemented on the field thanks to the prototype PWM sprayer.\n\n\n\n\nTable 1: Number of replicates per experimental treatment\n\n\nsprayPattern\n0.7N\n1.4N\n1N\n2N\n\n\n\n\nBH\n12\n12\n12\nNA\n\n\nFpF\n24\n24\n21\n21\n\n\nUf\n27\n27\n27\nNA"
+    "text": "In 2023, we made a field trial on a 2h commercial vineyard to explore how the spray pattern and the dosage of PPP affects the control of Powdery Mildew."
+  },
+  {
+    "objectID": "xpDesign.html#experimental-factors",
+    "href": "xpDesign.html#experimental-factors",
+    "title": "Experimental design",
+    "section": "Experimental factors",
+    "text": "Experimental factors\nIn this experiment, 2 factors were tested :\n\nthe dose of phytosanitary products : from 0.7 to 2x the reference dose (1N)\nthe spray pattern :\n\n\n\n\nSpray pattern modalities\n\n\n10 experimental treatments with around 20 replicates each Table 1 : 207 experimental units were implemented on the field thanks to the prototype PWM sprayer.\n\n\n\n\nTable 1: Number of replicates per experimental treatment\n\n\nsprayPattern\n0.7N\n1.4N\n1N\n2N\n\n\n\n\nBH\n12\n12\n12\nNA\n\n\nFpF\n24\n24\n21\n21\n\n\nUf\n27\n27\n27\nNA"
+  },
+  {
+    "objectID": "xpDesign.html#experimental-and-modulation-map",
+    "href": "xpDesign.html#experimental-and-modulation-map",
+    "title": "Experimental design",
+    "section": "Experimental and modulation map",
+    "text": "Experimental and modulation map\nThe Figure 1 below is interactive, you can choose the visibility of each layer (click on the left).\n\n\n\n\n\nFigure 1: Map of BiosprayTech experimental design"
   }
 ]
