@@ -7,6 +7,7 @@ editor: visual
 
 website:
   title: "SuproFuit 2023 - demo day"
+  search: false
   sidebar:
     background: "#dae0dd"
     logo: logoSuproFruit.png
@@ -21,6 +22,7 @@ website:
         contents:
           - xpDesign.qmd
           - disease.qmd
+          - lidar.qmd
   page-footer:
     right: "The 16th SUPROFRUIT Workshop - Demo - September 20, 2023"
     left: "&copy; CC BY-NC-ND"

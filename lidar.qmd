@@ -1,0 +1,40 @@
+---
+title: "Vegetation characterization"
+---
+
+To understand the effectiveness of phytosanitary protection, it is also necessary to characterize the vegetation. The structure of the vegetation was measured using a Lidar.
+
+![Lidar acquisition on grapevine](lidar.png)
+
+From the data we can calculate the vegetation height and width and calculate the Tree Row Volume @fig-map_lidar.
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-cap: "Map of TRV from LiDAR, 24 may 2023"
+#| label: fig-map_lidar
+
+## data repo
+data_repo_path <- "C:\\Users\\xdelpuech\\OneDrive - vignevin.com\\AE3\\ProjetsEnCours\\BIOSPRAYTECH\\03_DATA\\biospraytech2023\\data"
+
+### load map data
+library(sf) # (Spatial Feature) est dédié à la manipulation, la transformation et l’analyse de données spatiales. A la manière du Tidyverse, il combine les fonctionnalités de {sp}, {rgeos} et {rgdal} dans un package.
+
+lidar <- sf::read_sf(paste0(data_repo_path,"\\carto\\2023-05-24_LeMas_vegetatives.gpkg"))
+lidar$TRV <- lidar$height*lidar$thickness*10000/3
+
+TRV <- lidar
+LWA <- lidar
+
+library(tmap)
+tmap_mode("plot")
+mymap <- tm_shape(TRV) + tm_dots(col = "TRV",palette="-viridis") + 
+  tm_shape(LWA) + tm_dots(col = "lwa",palette="-viridis") +
+  tm_basemap("OpenStreetMap.France",alpha=0.2) +
+  tm_view(set.zoom.limits = c(18,22))
+ 
+mymap <- tmap::tmap_leaflet(mymap) 
+widgetframe::frameWidget(mymap,width="100%")
+```
+
+![](logoUMT.png)
