@@ -5,11 +5,11 @@ format: html
 
 ## Disease Assessment
 
-207 experimental units means a lot of disease observation to do ! what is the best compromise between time spent and precision of observations ?
+207 experimental units involves a lot of disease observations to be made ! What is the best compromise between time spent and precision of observations ?
 
-### Manual scouting
+### Manual assessment
 
-In spring, at phenological stage BBCH 53, a mapping of "flag shoots" symptoms of powdery mildew was realized.
+In spring, at phenological stage BBCH 53, a manual scouting of "flag shoots" symptoms of powdery mildew was realized.
 
 At BBCH 77, we did 2 manual assessement of powdery mildew , one following EPPO standard and the other one in a "FAST" mode:
 
@@ -29,9 +29,9 @@ At BBCH 77, we did 2 manual assessement of powdery mildew , one following EPPO s
 
 ### AI assessment
 
-We also tested the recognition by artificial intelligence of **downy mildew** symptoms on images taken mid-july by drone in partnership with the company [Chouette](https://www.chouette.vision/).
+We also tested the recognition by artificial intelligence of **downy mildew** symptoms on images taken mid-july by drone in partnership with the French company [Chouette](https://www.chouette.vision/).
 
-![Downy mildiew assessment using AI](Chouette.png)
+![Downy mildiew assessment using AI](Chouette.png){width="612"}
 
 ## Disease mapping
 

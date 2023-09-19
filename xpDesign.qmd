@@ -3,7 +3,7 @@ title: "Experimental design"
 format: html
 ---
 
-In 2023, we made a field trial on a 2h commercial vineyard to explore how the spray pattern and the dosage of PPP affects the control of Powdery Mildew.
+In 2023, we made a field trial on a 2ha commercial vineyard to explore how the spray pattern and the dosage of PPP affects the control of Powdery Mildew.
 
 ## Experimental factors
 In this experiment, 2 factors were tested :
